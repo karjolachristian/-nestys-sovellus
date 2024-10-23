@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Äänestyssysteemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Äänestyssysteemi</h1>
+    
+    <div id="kirjautumisboxi" class="laatikko">
+        <h2>Kirjaudu sisään</h2>
+        <input type="text" id="kayttaja" placeholder="Käyttäjänimi">
+        <input type="password" id="salasana" placeholder="Salasana">
+        <button onclick="kirjaudu()">Kirjaudu</button>
+    </div>
+
+    <div id="rekisteroitymisboxi" class="laatikko">
+        <h2>Rekisteröidy</h2>
+        <input type="text" id="uusikayttaja" placeholder="Käyttäjänimi">
+        <input type="password" id="uusisalasana" placeholder="Salasana">
+        <label><input type="checkbox" id="adminbox"> Admin?</label>
+        <button onclick="rekisteroi()">Rekisteröidy</button>
+    </div>
+
+    <div id="aanestysalue" class="piilo laatikko">
+        <h2>Moi <span id="kayttajanimi"></span>!</h2>
+        <button onclick="kirjauduUlos()">Kirjaudu ulos</button>
+        
+        <div id="adminJutut" class="piilo">
+            <h3>Tee uus äänestys</h3>
+            <input type="text" id="aanestysNimi" placeholder="Äänestyksen nimi">
+            <button onclick="teeuusiAanestys()">Luo äänestys</button>
+        </div>
+
+        <h3>Äänestykset:</h3>
+        <div id="aanestyslista"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

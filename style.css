@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f8ff;
+}
+.laatikko {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+.piilo {
+    display: none;
+}
+input, button {
+    margin: 5px 0;
+}
+.aanestys {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+}
+.vihrea-nappi {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+.punainen-nappi {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
